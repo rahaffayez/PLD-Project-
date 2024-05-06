@@ -1,0 +1,69 @@
+"Start Symbol" = <Prog>
+               
+!-------Terminal---------
+Id=[_]{letter}{alphanumeric}*
+Digit=('+'|'-'){digit}+ ('.'{digit}+)? (('e'|('+'|'-'){digit}+) '^' ('+'|'-'){digit}+('.'{digit}+)? )?
+!-------Rules------------
+<Prog> ::= start <stat_list> end
+
+
+<stat_list> ::= <concept>
+             |<concept><stat_list>
+
+<concept> ::= <assign>
+           |<for_stat>
+           |<if_stat>
+           |<switch_stat>
+           |<do_while_stat>
+     
+
+<assign> ::= <D_type> <id>'='<expr> '.'
+
+<id>::= Id
+     
+<expr> ::= <expr>'+'<term>
+        |<expr>'-'<term>
+        |<term>
+        
+<term> ::= <term>'*'<factor>
+        |<term>'/'<factor>
+        |<term>'%'<factor>
+        |<factor>
+        
+<factor> ::= <factor>'**'<exp>
+          |<exp>
+          
+<exp> ::= '('<expr>')'
+       |<id>
+       |<digit>
+       
+<digit> ::= Digit
+
+<D_type> ::= int |float |double |string         
+         
+! if statement
+
+<if_stat> ::= if '('<cond>')' Start <stat_list> End
+           |if '('<cond>')' Start <stat_list> End else <stat_list>
+           
+<cond> ::= <expr><op><expr>
+        
+<op> ::= '(''<'|'>'|'='|'<='|'>='|'!=''=='')'
+
+!for statement
+
+<for_stat> ::= for'('<D_type><assign> ';' <cond> ';' <step>')' '{'<stat_list>'}'
+            
+<step> ::= <id>'++'
+        |<id>'--'
+        |'++'<id>
+        |'--'<id>
+       
+! Switch statement
+<switch_stat> ::= switch '(' <id> ')' '{' <case_list> '}'
+<case_list> ::= <case_stat> | <case_stat> <case_list>
+<case_stat> ::= case <expr> ':' <stat_list> break ';'
+
+! Do while statement
+<do_while_stat> ::= do '{' <stat_list> '}' while '(' <cond> ')' ';'
+
