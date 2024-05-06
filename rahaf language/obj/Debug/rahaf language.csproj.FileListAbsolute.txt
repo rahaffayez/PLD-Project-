@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\rahaf language\rahaf language\bin\Debug\rahaf language.exe.config
+C:\Users\user\source\repos\rahaf language\rahaf language\bin\Debug\rahaf language.exe
+C:\Users\user\source\repos\rahaf language\rahaf language\bin\Debug\rahaf language.pdb
+C:\Users\user\source\repos\rahaf language\rahaf language\bin\Debug\CalithaLib.dll
+C:\Users\user\source\repos\rahaf language\rahaf language\bin\Debug\GoldParserEngine.dll
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf_language.Form1.resources
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf_language.Properties.Resources.resources
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.csproj.GenerateResource.cache
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.csproj.CopyComplete
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.exe
+C:\Users\user\source\repos\rahaf language\rahaf language\obj\Debug\rahaf language.pdb
